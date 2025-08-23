@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #0a66c2; /* LinkedIn blue */
+  background-color: #007BFF; 
   color: white;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .logo {
@@ -16,10 +16,47 @@
 }
 
 h1 {
-  font-size: 2rem;
+   font-size: 40px;       /* H2 → 40px */
+  line-height: 140%;     /* H2 → 140% */
+  font-weight: 600;  
+}
+
+p {
+   font-size: 13px;       /* Caption 1 → 13px */
+  line-height: 140%;     /* Caption 1 → 140% */
+  font-weight: 400;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #007BFF; 
+  color: white;
+  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  border-radius: 30px;   /* Corner radius */
+  overflow: hidden;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 400; /* Lobster is display-heavy */
   margin-bottom: 10px;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 400;
+  margin: 0;
 }

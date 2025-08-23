@@ -11,7 +11,7 @@ function Onboarding() {
       
 
       {/* Welcome text */}
-      <h2></h2>
+      <h2>CURA</h2>
       <p>Seamless HealthCare Booking</p>
     </div>
   );

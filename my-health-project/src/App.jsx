@@ -1,4 +1,4 @@
-import Onboarding from "./onboarding page/Onboarding";
+import Onboarding from "./onboardingpage/Onboarding";
 
 
 function App(){
