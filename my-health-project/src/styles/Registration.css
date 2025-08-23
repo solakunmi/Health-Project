@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  color: #007BFF;  /* Text color for headings */
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;   /* Corner radius */
+  overflow: hidden;
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.tagline {
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 400;
+  margin: 0;
+  color: #007BFF;
+}
+
+.info-text {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  color: black;  /* Extra paragraph in black */
+  margin: 20px 0;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column; /* Stacked buttons */
+  gap: 12px;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Buttons General */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #cce5ff; /* Light blue */
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  background-color: #99CCFF; /* Even lighter when clicked */
+  transform: translateY(0);
+}
+
+/* Signup Button */
+.signup-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #007BFF; /* default blue */
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover effect → very light blue */
+.signup-btn:hover {
+  background-color: #cce5ff; /* very light blue */
+  color: #007BFF; /* text becomes blue */
+}
+
+
+.signup-btn:active {
+  background-color: #99CCFF;
+  transform: translateY(0);
+}

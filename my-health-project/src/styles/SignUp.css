@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: white;
+  color: #007BFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+/* Back arrow */
+.back {
+  align-self: flex-start;
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+/* Heading */
+h5 {
+  font-family: 'AG Grotesk', sans-serif; /* the AG font family */
+  font-size: 28px; /* example size for H5 */
+  line-height: 28px; /* example line height */
+  font-weight: 700; /* bold */
+}
+
+
+.tagline {
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* Form fields */
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #E6F0FF; /* very light blue */
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* space for eye icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Remember me */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Sign Up button */
+.signup-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #007BFF; /* default blue */
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover effect → very light blue */
+.signup-btn:hover {
+  background-color: #cce5ff; /* very light blue */
+  color: #007BFF; /* text becomes blue */
+}
+
+
+/* Or sign up with text */
+.or {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.socials img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Already have an account link */
+.login-link {
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link span {
+  color: #007BFF;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  .form input {
+    font-size: 13px;
+  }
+
+  .signup-btn {
+    font-size: 15px;
+  }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form input {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .signup-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .socials img {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -8,11 +8,11 @@ function Onboarding() {
       {/* Logo */}
       <img src={logo} alt="CURA Logo" className="logo" />
 
-      
+      {/* Title */}
+      <h2 className="cura-title">CURA</h2>
 
-      {/* Welcome text */}
-      <h2>CURA</h2>
-      <p>Seamless HealthCare Booking</p>
+      {/* Tagline */}
+      <p className="tagl">Seamless HealthCare Booking</p>
     </div>
   );
 }
