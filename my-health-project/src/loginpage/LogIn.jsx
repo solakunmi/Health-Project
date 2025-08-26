@@ -12,7 +12,7 @@ function LogIn({ setScreen }) {
       <div className="back" onClick={() => setScreen("registration")}>&lt;</div>
 
       {/* Heading */}
-      <h5>Log In</h5>
+      <h5 className="Heading">Log In</h5>
 
       {/* Welcome block — aligned left */}
       <div className="welcome-block">

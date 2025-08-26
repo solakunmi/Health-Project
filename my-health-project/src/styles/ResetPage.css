@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
+
+.reset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Back arrow */
+.back {
+  align-self: flex-start;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Image */
+.image-wrapper img {
+  width: 245px; /* as per figma */
+  height: 198px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.password-label {
+  font-family: 'AG Grotesk', sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 6px;
+}
+
+/* Password wrapper */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.password-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #E6F0FF;
+  font-size: 16px;
+  outline: none;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Reset Password Button */
+.reset-btn {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #cce5ff;
+  color: #007BFF;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .password-input,
+  .reset-btn {
+    max-width: 100%;
+  }
+}
