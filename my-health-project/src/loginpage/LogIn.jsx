@@ -6,6 +6,12 @@ import { FaApple, FaFacebook } from "react-icons/fa";
 function LogIn({ setScreen }) {
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleLogin = () => {
+    // You can add your authentication logic here
+    // After successful login, redirect to homepage
+    setScreen("home");
+  };
+
   return (
     <div className="login-container">
       {/* Back menu: wide "<" in black */}
@@ -75,7 +81,8 @@ function LogIn({ setScreen }) {
           Forgot password?
         </div>
 
-        <button className="login-btn">Log In</button>
+        {/* Login button now redirects to HomePage */}
+        <button className="login-btn" onClick={handleLogin}>Log In</button>
       </div>
 
       {/* Divider */}

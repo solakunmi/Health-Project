@@ -1,0 +1,346 @@
+/* Ensure full height for vertical centering */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* light page background for contrast */
+}
+
+/* Homepage container centered both horizontally and vertically */
+.homepage-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* start from top but horizontally centered */
+  align-items: center;     
+  gap: 40px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;               /* horizontal layout: picture + text */
+  align-items: center;         /* vertically center text with pic */
+  justify-content: center;     /* center the entire section horizontally */
+  gap: 20px;                   /* space between picture and text */
+  width: 100%;                 
+  max-width: 600px;            
+  margin: 0 auto;              /* center container on page */
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+
+  /* Improve rendering on high DPI screens */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-text h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #000;
+}
+
+.profile-text p {
+  margin: 0;
+  color: #007BFF;
+  font-size: 18px;
+}
+
+/* Reminder icon */
+.reminder-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Search & filter section */
+.search-filter {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+  height: 55px;
+  background-color: #fff; /* white background */
+  border-radius: 20px;
+  padding: 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* dark shadow */
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+.search-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.filter-icon {
+  width: 40px;
+  height: 40px;
+}
+
+h5 {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 30px;
+  text-align: left !important; /* force left */
+  display: block; /* make sure it behaves like a block element */
+  width: 100%;
+}
+
+
+/* Services scroll section */
+.services-scroll {
+  display: flex;
+  justify-content: center; /* center the cards horizontally */
+  overflow-x: auto;
+  gap: 28px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.service-card {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 140px;
+  border-radius: 18px;
+  background-color: #fff; /* white background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* dark shadow */
+}
+
+.service-card img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  margin: 0;
+  color: #000;
+}
+
+/* Doctor card section */
+.doctor-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  height: 110px;
+  border-radius: 18px;
+  background-color: #fff; /* white background */
+  margin-bottom: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* dark shadow */
+}
+
+.doctor-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  margin-right: 20px;
+}
+
+.doctor-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor-name {
+  font-weight: 600;
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.doctor-specialty {
+  color: #007BFF;
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.location-rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #000;
+  gap: 10px;
+}
+
+.location-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.doctor-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.doctor-rating img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.bottom-nav img {
+  width: 36px;
+  height: 36px;
+   cursor: pointer;
+  transition: 0.3s;
+}
+
+.active-icon {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(92%) saturate(7474%) hue-rotate(204deg) brightness(95%) contrast(101%);
+}
+
+
+/* Scrollbar styling */
+.services-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.services-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.services-scroll::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
+
+/* Crisper PNG icons */
+.reminder-icon, .search-icon, .filter-icon, 
+.service-card img, .location-icon, .doctor-rating img, 
+.bottom-nav img {
+  image-rendering: auto;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+/* ========= RESPONSIVE DESIGN ========= */
+@media (max-width: 375px) {
+  .homepage-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .profile-section {
+    flex-direction: row;   /* ✅ keep picture + text in a row */
+    justify-content: flex-start; /* ✅ align left */
+    text-align: left;
+  }
+
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile-text h2 {
+    font-size: 22px;
+  }
+
+  .profile-text p {
+    font-size: 14px;
+  }
+
+  .search-filter {
+    flex-direction: row;   /* ✅ keep search + filter side by side */
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    height: 45px;
+  }
+
+  h5 {
+    font-size: 22px;
+    text-align: left; /* ✅ headings left */
+    margin-left: 5px;
+  }
+
+  .services-scroll {
+    justify-content: flex-start; /* ✅ align services left */
+    gap: 16px;
+  }
+
+  .service-card {
+    width: 100px;
+    height: 120px;
+  }
+
+  .doctor-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    height: auto;
+  }
+}

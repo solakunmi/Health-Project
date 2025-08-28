@@ -1,0 +1,165 @@
+.available-container {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Profile section */
+.profile-card {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-img {
+  margin-bottom: 10px;
+}
+
+.doctor-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Available Days */
+.available-days-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.available-days {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap; /* all days in one line */
+}
+
+.day-box {
+  flex: 1;              /* all boxes equal width */
+  min-width: 0;          /* ensures they shrink equally */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.day-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day-time {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Available Times */
+.available-times-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.available-times {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  flex: 1;
+  min-width: 70px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Consultation Buttons */
+.consultation-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.consultation-buttons {
+  display: flex;
+  flex-direction: column;  /* stack buttons vertically */
+  gap: 10px;               /* space between buttons */
+  align-items: center;     /* center buttons horizontally */
+}
+
+.consult-btn {
+  width: 100%;                 /* full width of container */
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  transition: 0.3s;
+
+  display: flex;
+  justify-content: space-between;  /* text left, icon right */
+  align-items: center;
+}
+
+.consult-btn span:first-child {
+  text-align: left;
+}
+
+.consult-btn span:last-child {
+  margin-left: 10px;
+}
+
+.consult-btn:hover {
+  background-color: #cce5f3;
+}
+
+/* CTA button */
+.book-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive for iPhone X */
+@media only screen and (max-width: 375px) {
+  .available-days, .available-times {
+    flex-direction: column; /* stack vertically on small screens */
+  }
+
+  .consultation-buttons {
+    width: 100%;
+  }
+
+  .consult-btn {
+    width: 100%;
+  }
+}

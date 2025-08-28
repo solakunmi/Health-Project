@@ -1,0 +1,241 @@
+/* ProfilePage.css */
+
+* {
+  box-sizing: border-box;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 100vw; /* Prevent container from exceeding viewport width */
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff; /* page is white */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header stays at the top left */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure header doesn't exceed container width */
+}
+
+.back {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Profile card content */
+.profile-card {
+  max-width: 400px;
+  width: 100%; /* Ensure responsive width */
+  margin: 0 auto 20px auto; /* center horizontally */
+  text-align: center;
+}
+
+.profile-img {
+  margin-bottom: 10px;
+}
+
+.doctor-name {
+  margin: 10px 0 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.doctor-specialty {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.doctor-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.location-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%; /* Ensure responsive width */
+  margin: 0 auto 20px auto; /* center horizontally */
+  gap: 10px; /* space between the boxes */
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #fff; /* white box */
+  flex: 1; /* boxes grow equally */
+  min-width: 0; /* ensures equal width even if content is longer */
+  word-wrap: break-word; /* Handle long text */
+}
+
+.stat-box img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  image-rendering: crisp-edges; /* make PNGs appear sharp */
+  image-rendering: pixelated; /* optional for very small icons */
+}
+
+.icon-bg {
+  width: 24px;
+  height: 24px;
+  background-color: #007bff; /* blue background */
+  border-radius: 6px; /* optional rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.icon-bg img {
+  width: 12px; /* slightly smaller than container */
+  height: 12px;
+  image-rendering: crisp-edges;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
+}
+
+/* About section */
+.about-section {
+  max-width: 400px;
+  width: 100%; /* Ensure responsive width */
+  margin: 0 auto 20px auto; /* center content */
+}
+
+.about-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Fee section */
+.fee-section {
+  max-width: 400px;
+  width: 100%; /* Ensure responsive width */
+  margin: 0 auto 20px auto; /* center content */
+}
+
+.fee-section h3 {
+  margin-bottom: 5px;
+}
+
+/* CTA button */
+.book-btn {
+  max-width: 400px;
+  width: 100%; /* Ensure responsive width */
+  display: block;
+  margin: 0 auto 20px auto; /* center horizontally */
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Make PNG icons in stat boxes crisp and sharp */
+
+/* Responsive adjustments for iPhone X (375px width) */
+@media only screen and (max-width: 375px) {
+  .profile-container {
+    padding: 15px;
+    max-width: 100vw; /* Ensure no horizontal overflow on mobile */
+  }
+
+  .profile-card,
+  .about-section,
+  .fee-section,
+  .book-btn {
+    max-width: 100%;
+    width: 100%; /* Full width on mobile */
+  }
+
+  .doctor-name {
+    font-size: 20px;
+  }
+
+  .doctor-specialty,
+  .doctor-location {
+    font-size: 14px;
+  }
+
+  .location-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .stats-row {
+    flex-direction: column; /* stack boxes vertically */
+    gap: 12px;
+    max-width: 100%;
+    width: 100%; /* Full width on mobile */
+  }
+
+  .stat-box {
+    justify-content: flex-start; /* align icon + text to left */
+    padding: 10px;
+  }
+
+  .stat-box img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-bg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-bg img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .stat-value {
+    font-size: 14px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .about-section h3,
+  .fee-section h3 {
+    font-size: 16px;
+  }
+
+  .book-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

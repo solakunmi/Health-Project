@@ -6,6 +6,12 @@ import { FaApple, FaFacebook } from "react-icons/fa";
 function SignUp({ setScreen }) {
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleSignUp = () => {
+    // You can add your sign-up logic here
+    // After successful signup, redirect to homepage
+    setScreen("home");
+  };
+
   return (
     <div className="signup-container">
       {/* Back arrow (black) */}
@@ -82,7 +88,7 @@ function SignUp({ setScreen }) {
         </label>
 
         {/* CTA */}
-        <button className="signup-btn">Sign Up</button>
+        <button className="signup-btn" onClick={handleSignUp}>Sign Up</button>
       </div>
 
       <p className="or">or sign up with</p>
