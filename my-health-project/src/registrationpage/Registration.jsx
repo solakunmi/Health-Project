@@ -1,5 +1,5 @@
 import React from "react";
-import "./../Styles/Registration.css";  // Import CSS
+import "./../styles/Registration.css";  // Import CSS
 import logo from "./../assets/Group 177.png"; // Import PNG
 
 // Receive setScreen as a prop from App.jsx
