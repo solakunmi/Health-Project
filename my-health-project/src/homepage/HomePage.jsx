@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/HomePage.css";
+import "../styles/HomePage.css";
 import profileImg from "../assets/profile.png";
 import reminderImg from "../assets/reminder.png";
 import filterImg from "../assets/filter.png";
