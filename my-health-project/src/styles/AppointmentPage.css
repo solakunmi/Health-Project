@@ -1,6 +1,6 @@
 .appointment-page {
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   /* Removed max-width constraint for full page layout */
   position: relative;

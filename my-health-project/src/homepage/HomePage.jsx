@@ -142,13 +142,13 @@ function HomePage({ setScreen }) {
         <img
           src={userIcon}
           alt="Profile"
-          onClick={() => handleNavClick("profile")}
+          onClick={() => handleNavClick("userpage")}
           className={activeTab === "profile" ? "active-icon" : ""}
         />
         <img
           src={settingsIcon}
           alt="Settings"
-          onClick={() => handleNavClick("settings")}
+          onClick={() => handleNavClick("settingpage")}
           className={activeTab === "settings" ? "active-icon" : ""}
         />
       </div>

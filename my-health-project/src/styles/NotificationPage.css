@@ -1,0 +1,96 @@
+/* Shared Page Container */
+.setting-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #cce5ff;
+  overflow-y: auto;
+}
+
+/* Header */
+.Header {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  background: #cce5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Back Button */
+.Bback-btn {
+  position: absolute;
+  left: -480px; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Page Title */
+.page-title {
+  margin: 0;
+  color: #007bff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Section (Menu or Notifications) */
+.menu-section {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu Item / Notification Item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Menu / Notification Icon */
+.menu-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 0;
+  background: #fafafa;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-item.active .nav-icon {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(94%) saturate(2269%) hue-rotate(205deg) brightness(95%) contrast(105%);
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}

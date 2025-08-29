@@ -42,7 +42,7 @@ function OTPPage({ setScreen }) {
       </div>
 
       {/* Heading */}
-      <h5>Enter your OTP</h5>
+      <h5 className="otp">Enter your OTP</h5>
 
       {/* OTP inputs */}
       <div className="otp-inputs">

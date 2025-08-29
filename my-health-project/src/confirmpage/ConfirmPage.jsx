@@ -12,7 +12,7 @@ function ConfirmPage({ setScreen }) {
       </div>
 
       {/* Heading */}
-      <h5>Congratulations, password reset successful</h5>
+      <h5 className="confirm">Congratulations, password reset successful</h5>
 
       {/* Spacer */}
       <div style={{ height: "60px" }}></div>

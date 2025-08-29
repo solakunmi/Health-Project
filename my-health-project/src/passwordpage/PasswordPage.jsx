@@ -21,7 +21,7 @@ function PasswordPage({ setScreen }) {
       </div>
 
       {/* Heading */}
-      <h5>Forget Password?</h5>
+      <h5 className="forget">Forget Password?</h5>
       <br />
       <p className="instruction-text">Enter your email</p>
       <br />

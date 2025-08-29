@@ -159,7 +159,7 @@ const AppointmentPage = ({ setScreen }) => {
         <button className="nav-item active">
           <img src={appointmentIcon || "/placeholder.svg"} alt="Appointments" className="nav-icon" />
         </button>
-        <button className="nav-item" onClick={() => setScreen("profile")}>
+        <button className="nav-item" onClick={() => setScreen("userpage")}>
           <img src={userIcon || "/placeholder.svg"} alt="Profile" className="nav-icon" />
         </button>
         <button className="nav-item">

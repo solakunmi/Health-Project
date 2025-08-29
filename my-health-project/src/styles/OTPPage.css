@@ -31,7 +31,7 @@
 }
 
 /* Heading */
-h5 {
+.otp {
   font-family: 'AG Grotesk', sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -39,7 +39,7 @@ h5 {
   margin: 0 0 10px 0;
   text-align: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
 }
 
 /* OTP input boxes */
