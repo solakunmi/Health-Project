@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/PasswordPage.css";
+import "../styles/PasswordPage.css";
 import rafikiImg from "../assets/rafiki.png";
 
 function PasswordPage({ setScreen }) {
