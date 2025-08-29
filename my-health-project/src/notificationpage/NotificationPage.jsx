@@ -3,7 +3,7 @@ import homeIcon from "../assets/home.png";
 import profileIcon from "../assets/user.png";
 import appointmentIcon from "../assets/appointment.png";
 import settingsIcon from "../assets/settings.png";
-import "../Styles/SettingPage.css"; // ✅ reuse same style
+import "../styles/SettingPage.css"; // ✅ reuse same style
 
 const NotificationPage = ({ setScreen }) => {
   const notifications = [
