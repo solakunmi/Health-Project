@@ -1,6 +1,6 @@
 // src/pages/ConfirmPage.jsx
 import React from "react";
-import "../Styles/ConfirmPage.css";
+import "../styles/ConfirmPage.css";
 import completedImg from "../assets/completed.png";
 
 function ConfirmPage({ setScreen }) {
