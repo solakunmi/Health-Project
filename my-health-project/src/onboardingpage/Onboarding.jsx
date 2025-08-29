@@ -1,5 +1,5 @@
 import React from "react";
-import "./../Styles/Onboarding.css";   // Import CSS
+import "./../styles/Onboarding.css";   // Import CSS
 import logo from "./../assets/Group 176.png"; // Import PNG
 
 function Onboarding() {
