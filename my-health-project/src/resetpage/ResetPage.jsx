@@ -1,6 +1,6 @@
 // src/pages/ResetPage.jsx
 import React, { useState } from "react";
-import "../Styles/ResetPage.css";
+import "../styles/ResetPage.css";
 import panaImg from "../assets/pana.png";
 
 function ResetPage({ setScreen }) {
