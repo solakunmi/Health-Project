@@ -7,7 +7,7 @@ import homeIcon from "../assets/home.png"
 import appointmentIcon from "../assets/appointment.png"
 import userIcon from "../assets/user.png"
 import settingsIcon from "../assets/settings.png"
-import "../Styles/AppointmentPage.css"
+import "../styles/AppointmentPage.css"
 
 const AppointmentPage = ({ setScreen }) => {
   const [activeTab, setActiveTab] = useState("upcoming")
