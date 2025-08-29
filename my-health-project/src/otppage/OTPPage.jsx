@@ -1,6 +1,6 @@
 // src/pages/OTPPage.jsx
 import React, { useState, useRef } from "react";
-import "../Styles/OTPPage.css";
+import "../styles/OTPPage.css";
 import rafikiImg from "../assets/rafiki.png";
 
 function OTPPage({ setScreen }) {
