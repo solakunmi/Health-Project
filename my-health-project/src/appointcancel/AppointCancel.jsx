@@ -1,5 +1,5 @@
 "use client"
-import "../Styles/AppointCancel.css"
+import "../styles/AppointCancel.css"
 import completedImg from "../assets/completed.png"
 
 function AppointCancel({ setScreen }) {
