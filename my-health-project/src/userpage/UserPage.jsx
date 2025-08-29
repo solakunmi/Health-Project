@@ -5,7 +5,7 @@ import profileImg from "../assets/profile.png";
 import appointmentIcon from "../assets/appointment.png";
 import userIcon from "../assets/user.png";
 import settingsIcon from "../assets/settings.png";
-import "../Styles/UserPage.css";
+import "../styles/UserPage.css";
 
 const UserPage = ({ setScreen }) => {
   const menuItems = [
