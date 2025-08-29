@@ -3,7 +3,7 @@ import homeIcon from "../assets/home.png";
 import profileIcon from "../assets/user.png";
 import appointmentIcon from "../assets/appointment.png";
 import settingsIcon from "../assets/settings.png";
-import "../Styles/SettingPage.css";
+import "../styles/SettingPage.css";
 
 const SettingPage = ({ setScreen }) => {
   const menuItems = [
