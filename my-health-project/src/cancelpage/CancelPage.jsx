@@ -5,7 +5,7 @@ import homeIcon from "../assets/home.png"
 import appointmentIcon from "../assets/appointment.png"
 import userIcon from "../assets/user.png"
 import settingsIcon from "../assets/settings.png"
-import "../Styles/CancelPage.css"
+import "../styles/CancelPage.css"
 
 const CancelPage = ({ setScreen }) => {
   const [selectedReason, setSelectedReason] = useState("personal")
